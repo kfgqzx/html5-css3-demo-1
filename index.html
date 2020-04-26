@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meat name="viewport" content="with=device-width,infinite-scale=1.0">
+        <meat http-equiv="x-UA-Compatiable" content="ie=edge">
+
+            <title>我的第一个页面</title>
+            <style>
+                body {
+                    background: #eee;
+                }
+
+                * {
+                    box-sizing: border-box;
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                @keyframes x {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                #bagua {
+
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 300px;
+                    position: relative;
+                    overflow: hidden;
+                    animation: x 10s infinite linear;
+                    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+                }
+
+                #bagua>div:first-child {
+
+                    width: 50%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    background: black;
+                }
+
+                #bagua>div:nth-child(2) {
+
+                    width: 50%;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    background: white;
+                }
+
+                #bagua>div:nth-child(3) {
+
+                    width: 200px;
+                    height: 200px;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -100px;
+                    border-radius: 50%;
+                    background: black;
+
+
+                }
+
+                #bagua>div:nth-child(4) {
+                    width: 200px;
+                    height: 200px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    margin-left: -100px;
+                    border-radius: 50%;
+                    background: white;
+
+                }
+
+                #bagua>div:nth-child(5) {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    left: 50%;
+                    top: 75px;
+                    margin-left: -25px;
+                    border-radius: 50%;
+                    background: white;
+                }
+
+                #bagua>div:nth-child(6) {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 75px;
+                    margin-left: -25px;
+                    border-radius: 50%;
+                    background: black;
+
+                }
+
+                #bagua-wrapper {
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                #bagua-miaoshu {
+                    margin-top: 1em;
+                }
+            </style>
+</head>
+
+<body>
+    <div id="bagua-wrapper">
+        <div id="bagua">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div id=bagua-miaoshu>
+            道也道，非常道
+        </div>
+
+
+    </div>
+</body>
+
+</html>
